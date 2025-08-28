@@ -4,8 +4,9 @@ import (
 	"context"
 
 	"github.com/calumari/jwalk"
-	"github.com/calumari/poutine"
 	"github.com/calumari/testequals"
+
+	"github.com/calumari/poutine"
 )
 
 type Tester interface {

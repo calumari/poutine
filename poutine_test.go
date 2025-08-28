@@ -5,10 +5,11 @@ import (
 	"testing"
 
 	"github.com/calumari/jwalk"
-	"github.com/calumari/poutine/database"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+
+	"github.com/calumari/poutine/database"
 )
 
 type mockDriver struct{ mock.Mock }
