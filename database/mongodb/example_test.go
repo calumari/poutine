@@ -1,4 +1,6 @@
-package example_test
+//go:build example
+
+package mongodb_test
 
 import (
 	"context"
