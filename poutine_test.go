@@ -55,7 +55,7 @@ func TestPoutine_Seed(t *testing.T) {
 	t.Run("seed driver error returns error", func(t *testing.T) {
 		md := &mockDriver{}
 		root := docKV("root", 0)
-		md.On("Seed", mock.Anything, root).Return(nil, assert.AnError).Once()
+		md.On("Seed", mock.Anything, root).Return(jwalk.Document(nil), assert.AnError).Once()
 		p := New(md)
 		got, err := p.Seed(t.Context(), root)
 		assert.Error(t, err)
@@ -79,7 +79,7 @@ func TestPoutine_Snapshot(t *testing.T) {
 
 	t.Run("snapshot driver error returns error", func(t *testing.T) {
 		md := &mockDriver{}
-		md.On("Snapshot", mock.Anything).Return(nil, assert.AnError).Once()
+		md.On("Snapshot", mock.Anything).Return(jwalk.Document(nil), assert.AnError).Once()
 		p := New(md)
 		got, err := p.Snapshot(t.Context())
 		assert.Error(t, err)
