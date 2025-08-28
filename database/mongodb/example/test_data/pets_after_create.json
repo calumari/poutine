@@ -1,0 +1,8 @@
+{
+  "pets": [
+    {
+      "name": "Luna",
+      "type": "cat"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "pets": [
+    {
+      "_id": {
+        "$oid": true
+      },
+      "name": "Luna",
+      "type": "cat"
+    },
+    {
+      "_id": {
+        "$oid": true
+      },
+      "name": "Max",
+      "type": "dog"
+    }
+  ]
+}
