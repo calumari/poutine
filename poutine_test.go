@@ -17,17 +17,11 @@ var _ database.Driver = (*mockDriver)(nil)
 
 func (m *mockDriver) Seed(ctx context.Context, root jwalk.Document) (jwalk.Document, error) {
 	args := m.Called(ctx, root)
-	if doc, ok := args.Get(0).(jwalk.Document); ok {
-		return doc, args.Error(1)
-	}
-	return nil, args.Error(1)
+	return args.Get(0).(jwalk.Document), args.Error(1)
 }
 func (m *mockDriver) Snapshot(ctx context.Context) (jwalk.Document, error) {
 	args := m.Called(ctx)
-	if doc, ok := args.Get(0).(jwalk.Document); ok {
-		return doc, args.Error(1)
-	}
-	return nil, args.Error(1)
+	return args.Get(0).(jwalk.Document), args.Error(1)
 }
 func (m *mockDriver) Teardown(ctx context.Context) error {
 	args := m.Called(ctx)
