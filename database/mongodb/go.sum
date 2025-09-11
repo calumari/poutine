@@ -8,6 +8,8 @@ github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERo
 github.com/Microsoft/go-winio v0.6.2/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
 github.com/calumari/jwalk v0.4.0 h1:smhmupFU9xiQV0UPIXH5ZmRWABXjnwkpMy9mjbdCW6k=
 github.com/calumari/jwalk v0.4.0/go.mod h1:VxGR4qg80JVx6IRHv/afNCuy0i/zqXxB7T58x7wBciM=
+github.com/calumari/poutine v0.2.0 h1:Nvstdptd1ptHl1pqkHngWuut2Yg6aNi+l0aso2Z/qwo=
+github.com/calumari/poutine v0.2.0/go.mod h1:+Nh5Kwy53JskIPxjXsX2M4movM70PCqJ16HBTKnRo04=
 github.com/calumari/testequals v0.2.0 h1:jQIGKmCKCaT85A6l9sRAlt5uXT6vpz4nuAL4J/2qO3M=
 github.com/calumari/testequals v0.2.0/go.mod h1:g8UCpd7xZVxEkuLuW1wmwixKEvuTqwFNhagfnN9Mq4k=
 github.com/cenkalti/backoff/v4 v4.2.1 h1:y4OZtCnogmCPw98Zjyt5a6+QwPLGkiQsYW5oUqylYbM=
